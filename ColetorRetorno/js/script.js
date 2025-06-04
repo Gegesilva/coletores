@@ -10,7 +10,7 @@ $('#form1').submit(function(e){
     console.log(d_pedido, d_produto);
 
     $.ajax({
-        url: 'http://databitbh.com:51230/coletores/coletorretorno/inserir.php',
+        url: 'inserir.php',
         method: 'POST',
         data: {pedido: d_pedido, produto: d_produto},
         /* dataType: 'json' */
@@ -38,7 +38,7 @@ $('#form3').submit(function(){
     console.log(d_pedido);
 
     $.ajax({
-        url: 'http://databitbh.com:51230/coletores/coletorretorno/atualStatus.php',
+        url: 'atualStatus.php',
         method: 'POST',
         data: {pedido: d_pedido},
         dataType: 'json'

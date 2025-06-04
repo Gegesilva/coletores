@@ -25,7 +25,7 @@
 
     }else { 
       echo"<script>window.alert('É necessário fazer login!')</script>";
-      echo "<script>location.href='http://databitbh.com:51230/coletores/login.php'</script>"; 
+      echo "<script>location.href='../login.php'</script>"; 
       
     } 
 
@@ -54,14 +54,14 @@
                <!-- <b class="titulo">PEDIDO DE VEND.</b> -->
                     
                     <div>
-                    <form method="post" action="http://databitbh.com:51230/coletores/coletorretornoexp/bip1.php">
+                    <form method="post" action="bip1.php">
 
                          <input class="inputcod" type="text" name="pedido" required autofocus="true" placeholder="Pedido de Venda"></br>
                         <input class="btn-inicio" type="submit">
                         <!-- <button id="btn">Imprimir</button> -->
                       </form>
                       </br>
-                      <form action="http://databitbh.com:51230/coletores/gerencial.php">
+                      <form action="../gerencial.php">
                         <input class="btn-inicio" type="submit" value="  Sair  "/>
                       </form>
                     </div>

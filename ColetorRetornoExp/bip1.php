@@ -28,7 +28,7 @@
    
        }else { 
          echo"<script>window.alert('É necessário fazer login!')</script>";
-         echo "<script>location.href='http://databitbh.com:51230/coletores/login.php'</script>"; 
+         echo "<script>location.href='../login.php'</script>"; 
          
        } 
     
@@ -46,7 +46,7 @@
 	   
 	 }else{
 		echo"<script>window.alert('Este pedido não esta em um status válido!')</script>";
-		echo "<script>location.href='http://databitbh.com:51230/coletores/coletorretornoexp/inicio.php'</script>"; 
+		echo "<script>location.href='inicio.php'</script>"; 
 		return;
 	 }
 	   
@@ -86,7 +86,7 @@
 <body>
 	<section class="content">
 		<div class="box_form">
-			<h1>PRODUTOS<button class="btn-voltar"><a class="btn-voltar" href="http://databitbh.com:51230/coletores/coletorretornoexp/inicio.php">VOLTAR</a> </button></h1>
+			<h1>PRODUTOS<button class="btn-voltar"><a class="btn-voltar" href="inicio.php">VOLTAR</a> </button></h1>
 			<form id="form1" class="form1">
 				<label for="pedido" class="label">Cod. Pedido</label>
     			<?php echo "<input type='text' name='pedido' class='inputcod' id='pedido' required  placeholder='Codigo do Pedido' disabled='' value='$pedido'/>";?>
@@ -98,7 +98,7 @@
 				<tr><input type="submit" form="form1" class="btn-env" value="Enviar"/>
             </form>
 			<!-- consultar itens adicionados -->
-			<form method="post" action="http://databitbh.com:51230/coletores/coletorretornoexp/itensalocados.php">
+			<form method="post" action="itensalocados.php">
 				<?php echo "<input class='inputcod' type='hidden' name='pedido' autofocus='true' value='$pedido'>"?>
 							<input class="btn-env" type="submit" value="Finalizar"></tr>
 	</table>

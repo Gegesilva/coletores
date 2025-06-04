@@ -29,7 +29,7 @@
    
        }else { 
          echo"<script>window.alert('É necessário fazer login!')</script>";
-         echo "<script>location.href='http://databitbh.com:51230/coletores/login.php'</script>"; 
+         echo "<script>location.href='../login.php'</script>"; 
        } 	   
 ?>
 
@@ -47,7 +47,7 @@
 <body>
 	<section class="content">
 		<div class="box_form">
-			<h1>Motorista<button class="btn-voltar"><a class="btn-voltar" href="http://databitbh.com:51230/coletores/coletorexpedicao/motorista.php">VOLTAR</a> </button></h1>
+			<h1>Motorista<button class="btn-voltar"><a class="btn-voltar" href="motorista.php">VOLTAR</a> </button></h1>
 			<form id="form1" class="form1">
 				<label for="codmoto" class="label">Codigo</label>
     			<?php echo "<input type='text' name='codmoto' class='inputcod' id='codmoto' required  placeholder='Codigo do Motorista' disabled='' value='$codmoto'/>";?>

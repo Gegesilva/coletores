@@ -24,7 +24,7 @@
 
     }else { 
       echo"<script>window.alert('É necessário fazer login!')</script>";
-      echo "<script>location.href='http://databitbh.com:51230/coletores/login.php'</script>"; 
+      echo "<script>location.href='../login.php'</script>"; 
     } 
 
     $pedido = $_POST['pedido'];
@@ -112,7 +112,7 @@
         <table  style="float: right;">
             <tr>
               <td>
-                <!-- <form action="http://databitbh.com:51230/coletores/coletorretorno/itensalocados.php" method="post">
+                <!-- <form action="coletorretorno/itensalocados.php" method="post">
                   <?php /* echo "<input class='inputcod' type='hidden' name='pedido' autofocus='true' value='$pedido'></br>" */?>
                   <input type="submit" class="voltarSalvo" value="VOLTAR">
                 </Form> -->
@@ -120,7 +120,7 @@
             </tr>
             <tr>
               <td>
-                <form method="get" action="http://databitbh.com:51230/coletores/coletorretorno/inicio.php" class="form-inicial">
+                <form method="get" action="inicio.php" class="form-inicial">
                     <input style="background-color: #90EE90;"  type="submit" class="voltarSalvo" value="INICIO">
                 </form>
               </td>

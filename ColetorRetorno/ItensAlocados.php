@@ -25,7 +25,7 @@
    
        }else { 
          echo"<script>window.alert('É necessário fazer login!')</script>";
-         echo "<script>location.href='http://databitbh.com:51230/coletores/login.php'</script>"; 
+         echo "<script>location.href='../login.php'</script>"; 
          
        } 
 
@@ -68,7 +68,7 @@
       <div class="card overflow-auto" style="margin-left: 0%;  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; ">
         <div class="card-header" style="background-color: #87CEFA; display: flex;">
         <p class="titulo" >ITENS</p>
-        <form method="post" action="http://databitbh.com:51230/coletores/coletorretorno/bip1.php" class="form-inicial">
+        <form method="post" action="bip1.php" class="form-inicial">
           <?php echo "<input class='inputcod' type='hidden' name='pedido' autofocus='true' value='$pedido'></br>";?>
           <input type="submit" class="voltar" value="VOLTAR">
         </form> 
@@ -204,7 +204,7 @@
                                       console.log(d_produto$cont, d_pedido$cont);
                                 
                                     $.ajax({
-                                        url: 'http://databitbh.com:51230/coletores/coletorretorno/deleteProd.php',
+                                        url: 'deleteProd.php',
                                         method: 'POST',
                                         data: {produto: d_produto$cont, pedido: d_pedido$cont},
                                         dataType: 'json'
@@ -224,7 +224,7 @@
         </br>
     </div>
     </br>
-    <form action="http://databitbh.com:51230/coletores/coletorretorno/atualStatus.php" method="post">
+    <form action="atualStatus.php" method="post">
       <?php echo "<input type='hidden' id='pedido' name='pedido' class='btn-status' value='$pedido'>";?>
       <?php print($botaoConf);?>
     </form>

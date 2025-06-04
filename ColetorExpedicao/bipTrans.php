@@ -28,7 +28,7 @@
    
        }else { 
          echo"<script>window.alert('É necessário fazer login!')</script>";
-         echo "<script>location.href='http://databitbh.com:51230/coletores/login.php'</script>"; 
+         echo "<script>location.href='../login.php'</script>"; 
          
        } 
     
@@ -47,7 +47,7 @@
 <body>
 	<section class="content">
 		<div class="box_form">
-			<h1>TRANSPORTADORA<button class="btn-voltar"><a class="btn-voltar" href="http://databitbh.com:51230/coletores/coletorexpedicao/inicio.php">VOLTAR</a> </button></h1>
+			<h1>TRANSPORTADORA<button class="btn-voltar"><a class="btn-voltar" href="inicio.php">VOLTAR</a> </button></h1>
 			<form id="form2" class="form2">
 				<label for="pedido" class="label">Cod. Pedido</label>
     			<?php echo "<input type='text' name='pedido' class='inputcod' id='pedido' required  placeholder='Codigo do Pedido' value='$pedido'/>";?>

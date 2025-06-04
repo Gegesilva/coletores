@@ -1,5 +1,5 @@
 ﻿<?php
- include_once("config.php");
+ include_once("../config.php");
 
   $serverName = "$server";
   $connectionInfo = array("Database"=>"$base", "UID"=>"$usuarioBanco", "PWD"=>"$SenhaBanco", "CharacterSet"=>"UTF-8");

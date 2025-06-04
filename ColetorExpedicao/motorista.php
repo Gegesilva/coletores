@@ -27,7 +27,7 @@
   
 	  }else { 
       echo"<script>window.alert('É necessário fazer login!')</script>";
-      echo "<script>location.href='http://databitbh.com:51230/coletores/login.php'</script>"; 
+      echo "<script>location.href='../login.php'</script>"; 
 	  } 
 
 ?>
@@ -57,7 +57,7 @@
   <body class="text-center">
 
     <div class="card" style="background-color: white; width: auto; margin-left: 2%; margin-right: 2%; margin-top: 2%; border-radius: 30px;">
-     <form action="http://databitbh.com:51230/coletores/coletorexpedicao/inicio.php"><button class="btn-voltar">VOLTAR</button></form>
+     <form action="inicio.php"><button class="btn-voltar">VOLTAR</button></form>
       <img src="media/logo.png" width="100" height="80" style="margin-left: 8px; border-radius:20px;"  class="d-inline-block align-top" alt="">
         <div class="cover-container d-flex h-100 p-3 mx-auto flex-column container-button">
           <header class="masthead mb-auto">
@@ -71,7 +71,7 @@
             <main role="main" class="inner cover">
               <div class='divBtn'>
                 <!-- <td>
-                  <a href='http://databitbh.com:51230/coletores/coletorexpedicao/inicio.php'><input style='margin-bottom: 20px;' id='deletar' name='nomemoto'  class='btn btn-outline-primary' value='VOLTAR'/></a>
+                  <a href='oletorexpedicao/inicio.php'><input style='margin-bottom: 20px;' id='deletar' name='nomemoto'  class='btn btn-outline-primary' value='VOLTAR'/></a>
                 </td>  -->
                    <?php
                       $sql1 = "
@@ -87,7 +87,7 @@
                       while($row1 = sqlsrv_fetch_array($stmt1, SQLSRV_FETCH_ASSOC)){  
                         $tabela .="
                         <div class='divbtn'>
-                          <form class='form-btn' action='http://databitbh.com:51230/coletores/coletorexpedicao/bipMoto.php' method='post'>
+                          <form class='form-btn' action='bipMoto.php' method='post'>
                             <input style='margin-bottom: 20px;' onclick='return pergunta1();' type='submit' id='nome' name='nome'  class='btn btn-outline-info' value='$row1[Nome]'/>
                             <input type='hidden' name='codmoto' id='codmoto' value='$row1[Cod]'/>
                           </form>

@@ -11,7 +11,7 @@ $('#form1').submit(function(e){
     console.log(d_pedido, d_codmoto, d_nome);
 
     $.ajax({
-        url: 'http://databitbh.com:51230/coletores/coletorexpedicao/inserir.php',
+        url: 'inserir.php',
         method: 'POST',
         data: {pedido: d_pedido, codmoto: d_codmoto, nome: d_nome},
         /* dataType: 'json' */
@@ -31,7 +31,7 @@ $('#form2').submit(function(e){
   let resultados = document.getElementById('resultados');
 
   $.ajax({
-    url: 'http://databitbh.com:51230/coletores/coletorexpedicao/inserirTrans.php',
+    url: 'inserirTrans.php',
     method: 'POST',
     data: {pedido: d_pedido}
   }).done(function(result){

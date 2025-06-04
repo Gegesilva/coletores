@@ -31,7 +31,7 @@
   
 	  }else { 
 		echo"<script>window.alert('É necessário fazer login!')</script>";
-		echo "<script>location.href='http://databitbh.com:51230/coletores/login.php'</script>"; 
+		echo "<script>location.href='../login.php'</script>"; 
 		
 	  } 
 
