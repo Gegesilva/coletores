@@ -53,7 +53,7 @@
 	$sql = "
 			UPDATE TB02021 
 			SET 
-				TB02021_STATUS = 'K1',
+				TB02021_STATUS = 'K5',
 				TB02021_DTALT = GETDATE(),
 				TB02021_OPALT = '$login'
 			WHERE TB02021_CODIGO = '$pedido'

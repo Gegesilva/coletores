@@ -174,3 +174,28 @@ img {
 .btn {
   margin-left: 0;
 }
+
+
+
+/* adicionado devido ao aumento no numero de botães */
+  .divBtn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* espaço entre os botões */
+    justify-content: center; /* ou flex-start se preferir à esquerda */
+    padding: 10px;
+  }
+
+  .divBtn button {
+    flex-shrink: 0; /* Impede o botão de encolher */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+
+  .divBtn button:hover {
+    background-color: #0056b3;
+  }
