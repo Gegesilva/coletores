@@ -37,15 +37,14 @@
 
 
 	/* VALIDA PEDIDO */
-			$sql4="
-			SELECT TB02021_STATUS status FROM TB02021
-			WHERE TB02021_CODIGO = '$pedido'
-		";
+		$sql4="SELECT TB02021_STATUS status FROM TB02021
+		WHERE TB02021_CODIGO = '$pedido'";
+
 		$stmt4= sqlsrv_query($conn,$sql4);
 		while($row4 = sqlsrv_fetch_array($stmt4, SQLSRV_FETCH_ASSOC)){
 		$status = $row4['status'];
 		}
-		if($status == 'K1'){
+		if($status == 'U6'){
 
 		}else{
 			echo"<h1 class='resultado'>O pedido <b>$pedido</b> não está em um status válido!</h1>";
