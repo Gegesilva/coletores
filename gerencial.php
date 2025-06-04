@@ -45,35 +45,33 @@ if ($usuario != NULL) {
 
 $conferencia = ($permGrafOs == '1') ? '<form class="form-btn" action="coletorconferencia/inicio.php">
                                           <input type="submit" id="deletar"  class="btn btn-outline-secondary" value="Conferência"></input>
-                                         </form> ' : '';
+                                        </form> ' : '';
 $retornoExp = ($permVendas == '1') ? ' <form class="form-btn" action="coletorretornoexp/inicio.php">
                                           <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Retorno Exp"></input>
-                                         </form>  ' : '';
+                                        </form>  ' : '';
 $retorno = ($permGrafReq == '1') ? '   <form class="form-btn" action="coletorretorno/inicio.php">
                                           <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Retorno"></input>
-                                         </form>' : '';
-
-
-
-
-$triagemEstoque = ($permUsu == '1') ? '       <form class="form-btn" action="ColetorTriagemEstoque/bip1.php">
-                                          <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Triagem"></input>
-                                         </form>' : '';
-$rotExp = ($permUsu == '1') ? '       <form class="form-btn" action="ColetorRotExp/bip1.php">
-                                         <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Triagem"></input>
                                         </form>' : '';
-$entCorr = ($permUsu == '1') ? '       <form class="form-btn" action="ColetorEntCorr/bip1.php">
-                                        <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Triagem"></input>
+
+
+$triagemEstoque = ($permUsu == '1') ? '<form class="form-btn" action="ColetorTriagemEstoque/bip1.php">
+                                          <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Triagem Estoque"></input>
                                        </form>' : '';
-$entLatam = ($permUsu == '1') ? '       <form class="form-btn" action="ColetorEntLatam/bip1.php">
-                                       <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Triagem"></input>
+$rotExp = ($permUsu == '1') ? '       <form class="form-btn" action="ColetorRotExp/bip1.php">
+                                         <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Roteirização Exp"></input>
+                                      </form>' : '';
+$entCorr = ($permUsu == '1') ? '      <form class="form-btn" action="ColetorEntCorr/bip1.php">
+                                        <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Entrega Correio"></input>
+                                      </form>' : '';
+$entLatam = ($permUsu == '1') ? '      <form class="form-btn" action="ColetorEntLatam/bip1.php">
+                                        <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Entrega Latam"></input>
                                       </form>' : '';
 
 
 
 $expedicao = ($permChat == '1') ? '    <form class="form-btn" action="coletorexpedicao/inicio.php">
                                           <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Expedição"></input>
-                                         </form>' : '';
+                                      </form>' : '';
 ?>
 <!doctype html>
 <html lang="en">
@@ -134,7 +132,7 @@ $expedicao = ($permChat == '1') ? '    <form class="form-btn" action="coletorexp
           <?php print ($rotExp); ?>
 
           <?php print ($entCorr); ?>
-          
+
           <?php print ($entLatam); ?>
 
           <?php print ($expedicao); ?>
