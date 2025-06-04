@@ -18,12 +18,12 @@
         <img src="coletorretorno/media/logo.png"id="icon" alt="User Icon" />
 
         <!-- Login Form -->
-        <form action="http://databitbh.com:51230/coletores/loginexec.php" method="post">
+        <form action="loginexec.php" method="post">
           <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuario">
           <input type="password" id="password" class="fadeIn third" name="password" placeholder="Senha">
           <input type="submit" class="fadeIn fourth" value="Entrar">
         </form>
-        <form action="http://databitbh.com:51230/coletores/gerencial.php">
+        <form action="gerencial.php">
           <input type="submit" class="fadeIn fourth" value="Inicio">
         </form>
 

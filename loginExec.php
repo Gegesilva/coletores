@@ -28,13 +28,13 @@ $_SESSION["password"]=$senha;
    
     if($usuario != NULL){
         
-           echo "<script>location.href='http://databitbh.com:51230/coletores/gerencial.php'</script>";
+           echo "<script>location.href='gerencial.php'</script>";
 
     } else{
 
 
         echo"<script>window.alert('Usuario e/ou senha invalidos!')</script>";
-        echo "<script>location.href='http://databitbh.com:51230/coletores/login.php'</script>";
+        echo "<script>location.href='login.php'</script>";
 
     }
 

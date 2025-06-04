@@ -24,7 +24,7 @@
 
     }else { 
       echo"<script>window.alert('É necessário fazer login!')</script>";
-      echo "<script>location.href='http://databitbh.com:51230/coletores/login.php'</script>"; 
+      echo "<script>location.href='../login.php'</script>"; 
       
     } 
 
@@ -154,7 +154,7 @@
             </tr>
             <tr>
               <td>
-                <form method="get" action="http://databitbh.com:51230/coletores/coletorconferencia/inicio.php" class="form-inicial">
+                <form method="get" action="inicio.php" class="form-inicial">
                     <input style="background-color: #90EE90;"  type="submit" class="voltarSalvo" value="INICIO">
                 </form>
               </td>

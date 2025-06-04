@@ -38,24 +38,24 @@
  
      }else { 
        echo"<script>window.alert('É necessário fazer login!')</script>";
-       echo "<script>location.href='http://databitbh.com:51230/coletores/login.php'</script>";
+       echo "<script>location.href='login.php'</script>";
        
      } 
 
 
-  $conferencia = ($permGrafOs == '1') ? '<form class="form-btn" action="http://databitbh.com:51230/coletores/coletorconferencia/inicio.php">
+  $conferencia = ($permGrafOs == '1') ? '<form class="form-btn" action="coletorconferencia/inicio.php">
                                           <input type="submit" id="deletar"  class="btn btn-outline-secondary" value="Conferência"></input>
                                          </form> ' : '';
-  $retornoExp = ($permVendas == '1') ? ' <form class="form-btn" action="http://databitbh.com:51230/coletores/coletorretornoexp/inicio.php">
+  $retornoExp = ($permVendas == '1') ? ' <form class="form-btn" action="coletorretornoexp/inicio.php">
                                           <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Retorno Exp"></input>
                                          </form>  ' : ''; 
-  $retorno = ($permGrafReq == '1') ? '   <form class="form-btn" action="http://databitbh.com:51230/coletores/coletorretorno/inicio.php">
+  $retorno = ($permGrafReq == '1') ? '   <form class="form-btn" action="coletorretorno/inicio.php">
                                           <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Retorno"></input>
                                          </form>' : '';
-  $triagem = ($permUsu == '1') ? '       <form class="form-btn" action="http://databitbh.com:51230/coletores/coletortriagem/bip1.php">
+  $triagem = ($permUsu == '1') ? '       <form class="form-btn" action="coletortriagem/bip1.php">
                                           <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Triagem"></input>
                                          </form>' : '';
-  $expedicao = ($permChat == '1') ? '    <form class="form-btn" action="http://databitbh.com:51230/coletores/coletorexpedicao/inicio.php">
+  $expedicao = ($permChat == '1') ? '    <form class="form-btn" action="coletorexpedicao/inicio.php">
                                           <input type="submit" id="inserir" class="btn btn-outline-secondary" value="Expedição"></input>
                                          </form>' : '';  
 ?>
@@ -75,7 +75,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
       <!-- Bootstrap core CSS -->
-      <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
       <!-- Custom styles for this template -->
       <link href="cover.css" rel="stylesheet">
@@ -85,7 +85,7 @@
   <body class="text-center">
 
     <div class="card" style="background-color: white; width: auto; margin-left: 2%; margin-right: 2%; margin-top: 2%; border-radius: 30px;">
-     <form action="http://databitbh.com:51230/coletores/login.php"><button class="btn-voltar">SAIR</button></form>
+     <form action="login.php"><button class="btn-voltar">SAIR</button></form>
       <img src="coletorconferencia/media/logo.png" width="100" height="80" style="margin-left: 8px; border-radius:20px;"  class="d-inline-block align-top" alt="">
         <div class="cover-container d-flex h-100 p-3 mx-auto flex-column container-button">
           <header class="masthead mb-auto">
