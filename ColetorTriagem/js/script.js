@@ -9,7 +9,7 @@ $('#form1').submit(function(e){
     console.log(d_pedido);
 
     $.ajax({
-        url: 'http://databitbh.com:51230/coletores/coletortriagem/inserir.php',
+        url: 'inserir.php',
         method: 'POST',
         data: {pedido: d_pedido},
         /* dataType: 'json' */
