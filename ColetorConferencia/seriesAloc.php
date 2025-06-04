@@ -23,7 +23,7 @@
    
        }else { 
          echo"<script>window.alert('É necessário fazer login!')</script>";
-         echo "<script>location.href='http://databitbh.com:51230/coletores/login.php'</script>"; 
+         echo "<script>location.href='../login.php'</script>"; 
          
        } 
 
@@ -74,7 +74,7 @@
       <script src="js/script.js"></script>
 <!-- example 2 - using auto margins -->
   <nav class="nav">       
-        <form method="post" action="http://databitbh.com:51230/coletores/Coletorconferencia/itensalocados.php" class="form-inicial">
+        <form method="post" action="itensalocados.php" class="form-inicial">
             <b><p class="titulo" >SÉRIES</p></b>
             <?php echo "<input class='inputcod' type='hidden' name='orcamento'  id='orcamento' value='$orcamentoSemAspas'>"?>
             <?php echo "<input class='inputcod' type='hidden' name='produto' id='produto' value='$produtoSemAspas'>"?>
@@ -180,7 +180,7 @@
                                     console.log(d_produto$cont, d_orcamento$cont, d_serie$cont);
                               
                                   $.ajax({
-                                      url: 'http://databitbh.com:51230/coletores/Coletorconferencia/deleteSerie.php',
+                                      url: 'deleteSerie.php',
                                       method: 'POST',
                                       data: {produto: d_produto$cont, orcamento: d_orcamento$cont, serie: d_serie$cont},
                                       dataType: 'json'

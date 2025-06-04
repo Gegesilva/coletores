@@ -146,7 +146,7 @@
         <table  style="float: right;">
             <tr>
               <td>
-                <!-- <form action="http://databitbh.com:51230/coletores/coletorconferencia/itensalocados.php" method="post">
+                <!-- <form action="oletorconferencia/itensalocados.php" method="post">
                   <?php /* echo "<input class='inputcod' type='hidden' name='orcamento' autofocus='true' value='$orcamento'></br>" */?>
                   <input type="submit" class="voltarSalvo" value="VOLTAR">
                 </Form> -->

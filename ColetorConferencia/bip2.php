@@ -25,7 +25,7 @@
    
        }else { 
          echo"<script>window.alert('É necessário fazer login!')</script>";
-         echo "<script>location.href='http://databitbh.com:51230/coletores/login.php'</script>"; 
+         echo "<script>location.href='../login.php'</script>"; 
          
        } 
 
@@ -49,7 +49,7 @@
 	<section class="content">
 		<div class="box_form">
 			<h1>SÉRIES
-				<form method="post" action="http://databitbh.com:51230/coletores/coletorconferencia/itensalocados.php" class="form-inicial">
+				<form method="post" action="itensalocados.php" class="form-inicial">
 					<?php echo "<input class='inputcod' type='hidden' name='orcamento' autofocus='true' value='$orcamento'></br>";?>
 					</a><button type="submit" class="btn-voltar">VOLTAR</buttom>
 				</form> 

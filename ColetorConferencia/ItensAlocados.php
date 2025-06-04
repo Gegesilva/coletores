@@ -62,7 +62,7 @@
       <script src="js/jQuery/jquery-3.5.1.min.js" charset="utf-8"></script>
       <script src="js/script.js"></script>
 <!-- example 2 - using auto margins -->      
-        <form method="post" action="http://databitbh.com:51230/coletores/coletorconferencia/bip1.php" class="form-inicial">
+        <form method="post" action="bip1.php" class="form-inicial">
 
             <b><p class="titulo" >ITENS</p></b>
 
@@ -79,7 +79,7 @@
 
        <div class="card overflow-auto" style="margin-left: 0%;  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;">
           <div class="card-header" style="background-color: #87CEFA;">
-          <form action="http://databitbh.com:51230/coletores/coletorconferencia/seriesAloc.php" method='post'>
+          <form action="seriesAloc.php" method='post'>
             <div class="status">
                 PRODUTOS  
                 <?php echo "<input class='btn-inserir' type='hidden' name='orcamento' value='$orcamento'/>"; ?>          
@@ -228,7 +228,7 @@
               $tabela .= "<td style='background: $cor;'>".$row['Qtde']."</td>";
               if($row['PosSerie'] == 'S' && $row['Inserir'] > 0){
                 $tabela .= "<td>
-                              <form action='http://databitbh.com:51230/coletores/coletorconferencia/bip2.php' method='post'>
+                              <form action='bip2.php' method='post'>
                                 <input type='hidden' id='produto' name='produto' class='btn-inserir' value='$row[Prod]'>
                                 <input type='hidden' id='produto' name='orcamento' class='btn-inserir' value='$orcamento'>
                                 <input type='hidden' id='desc' name='desc' class='btn-inserir' value='$row[NomeProd]'>
@@ -257,7 +257,7 @@
                                       console.log(d_produto$cont, d_orcamento$cont);
                                 
                                     $.ajax({
-                                        url: 'http://databitbh.com:51230/coletores/coletorconferencia/deleteProd.php',
+                                        url: 'deleteProd.php',
                                         method: 'POST',
                                         data: {produto: d_produto$cont, orcamento: d_orcamento$cont},
                                         dataType: 'json'
@@ -273,7 +273,7 @@
                   /* CONFERIR SERIE */
                   if($row['PosSerie'] == 'S' /* && $row['Inserir'] == 0 */){
                   $tabela .= "<td>
-                                <form action='http://databitbh.com:51230/coletores/coletorconferencia/seriesAloc.php' method='post'>
+                                <form action='seriesAloc.php' method='post'>
                                   <input type='hidden' id='produto' name='produto' value='$row[Prod]'/>
                                   <input type='hidden' id='orcamento' name='orcamento' value='$row[CODIGO]'>
                                   <input class='btn-deletar' type='submit' name='conferir' id='conferir' value='CONF.'/>
@@ -292,7 +292,7 @@
         </br>
     </div>
     </br>
-    <form action="http://databitbh.com:51230/coletores/coletorconferencia/atualStatus.php" method="post">
+    <form action="atualStatus.php" method="post">
       <?php echo "<input type='hidden' id='orcamento' name='orcamento' class='btn-status' value='$orcamento'>";?>
       <?php print($botaoConf);?>
     </form>

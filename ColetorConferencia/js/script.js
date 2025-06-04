@@ -10,7 +10,7 @@ $('#form1').submit(function(e){
     console.log(d_orcamento, d_produto);
 
     $.ajax({
-        url: 'http://databitbh.com:51230/coletores/coletorconferencia/inserir.php',
+        url: 'inserir.php',
         method: 'POST',
         data: {orcamento: d_orcamento, produto: d_produto},
         /* dataType: 'json' */
@@ -36,7 +36,7 @@ $('#form2').submit(function(e){
     console.log(d_serie, d_produto, d_orcamento);
 
     $.ajax({
-        url: 'http://databitbh.com:51230/coletores/coletorconferencia/inserirserie.php',
+        url: 'inserirserie.php',
         method: 'POST',
         data: {serie: d_serie, produto: d_produto, orcamento: d_orcamento},
         /* dataType: 'json' */
@@ -68,7 +68,7 @@ $('#form3').submit(function(){
     console.log(d_orcamento);
 
     $.ajax({
-        url: 'http://databitbh.com:51230/coletores/coletorconferencia/atualStatus.php',
+        url: 'atualStatus.php',
         method: 'POST',
         data: {orcamento: d_orcamento},
         dataType: 'json'
